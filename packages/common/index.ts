@@ -1,6 +1,4 @@
 // Barrel file
 
 // Common Multi Components
-export * from "./Json";
-
-export { Reference } from "./Json/Reference";
+export * from "./Json/Component_Matcher";

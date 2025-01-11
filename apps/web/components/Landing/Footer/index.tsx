@@ -16,7 +16,7 @@ const Footer = () => {
         </Button>
       </div>
       <Start_now />
-      <Absolute_footer />
+      {/* <Absolute_footer /> */}
     </section>
   );
 };

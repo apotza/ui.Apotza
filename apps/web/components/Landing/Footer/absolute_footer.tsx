@@ -5,9 +5,12 @@ type Props = {};
 
 const Absolute_footer = (props: Props) => {
   return (
-    <div className="relative top-0 flex top-15 h-28 justify-center items-center gap-[100px]">
+    <div className="flex top-15 h-[200px] justify-center bg-gradient-to-tr from-transparent  via-black/80 items-center to-blue-950 gap-[100px] ">
       <Brand_logo />
-      <div className="text-gray-400 text-center">© 2025 Apotza UI KIT</div>
+      <div className="text-gray-400 text-center">
+        © 2025 Apotza UI KIT <br />{" "}
+        <span className="text-sm">All Rights Reserved</span>
+      </div>
       <div className="h-[50px]"></div>
     </div>
   );

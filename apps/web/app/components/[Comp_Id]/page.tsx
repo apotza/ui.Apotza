@@ -19,7 +19,7 @@ export default function CompIdPage({ params }: Props) {
   }
 
   // Getting Component data Through Reference
-  const component = data[Comp_Id] || null;
+  const Component: any = data[Comp_Id] || null;
   useEffect(() => {
     getProp();
     // console.log(component)
@@ -29,19 +29,10 @@ export default function CompIdPage({ params }: Props) {
 
   return (
     <div>
-      <div className="flex h-screen bg-gradient-to-tl from-blue-950 to-transparent">
-        <Sidebar />
-
-        <div className="flex-grow mt-[100px] mx-10">
-          {component && (
-            <Code_Layout
-              title={component.title}
-              description={component.description}
-              Usage={component.usage}
-              code={component.code}
-              prop={component.prop}
-            />
-          )}
+      <div className="relative min-h-screen ">
+        <div className="pl-[300px] pt-[150px]">
+          {Component && <Component />}
+          <div className="h-screen"></div>{" "}
         </div>
       </div>
     </div>

@@ -6,7 +6,8 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "../../packages/ui_patterns/**/*.{js,ts,jsx,tsx,mdx}",
+    "../../packages/Layouts/**/*.{js,ts,jsx,tsx,mdx}",
+    "../../packages/ui/**/*.{js,ts,jsx,tsx,mdx}",
     "../../packages/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -55,11 +56,6 @@ const config: Config = {
       },
       fontFamily: {
         jakarta: ["JakartaSans", "sans-serif"],
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
       },
     },
   },
